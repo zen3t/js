@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro HTML</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onLoad="carregou()">
+    <main class="tela-principal">
+      <h1 id="titulo" onMouseOver="focou()">Aula 11</h1>
+      <section class="conteudo">
+        <article class="box"></article>
+        <article class="box"></article>
+      </section>
+      <button class="botao" id="btn1">Box 1</button>
+      <button class="botao" id="btn2">Box 2</button>
+      <section>
+        <hr />
+        <form action="">
+          <input
+            type="text"
+            id="cxtexto"
+            placeholder="Digite no seu Nome"
+            onFocus="focoNoCampo()"
+            onFocusOut="semFocoNoCampo()"
+            onKeyPress="avisarQueTeclou()"
+          />
+          <button class="botao" id="btn3" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

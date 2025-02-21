@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 16 de js</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Tela Principal-->
+    <main id="tela-principal">
+      <h1>Dados virtual D6 | Virtual dice</h1>
+      <section class="conteudo">
+        <p class="centro" id="sorteado">?</p>
+        <figure><img src="./img/dado/0.png" alt="Dado" id="imgDado" /></figure>
+      </section>
+      <p class="centro"><button id="btnSortear">Sortear</button></p>
+    </main>
+    <audio
+      preload
+      id="dadoRolando"
+      src="./asset/dado-rolando.mp3"
+      type="audio/mpeg"
+    ></audio>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

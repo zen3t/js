@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 15 de js</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Tela Principal-->
+    <main id="tela-principal">
+      <section class="conteudo" id="formulario">
+        <h1>Calcular a Media</h1>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nota1">Nota 1</label>
+            <input
+              type="number"
+              step="0.1"
+              id="nota1"
+              min="0.0"
+              max="10.0"
+              name="nota1"
+              required
+              autofocus
+              onBlur="validarNumero(this)"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nota2">Nota 2</label>
+            <input
+              type="number"
+              step="0.1"
+              id="nota2"
+              min="0.0"
+              max="10.0"
+              name="nota2"
+              required
+              onBlur="validarNumero(this)"
+            />
+          </div>
+          <div class="form-group">
+            <button class="botao" id="btnCalcular" type="submit">
+              Calcular
+            </button>
+            <button type="reset" id="btnLimpar">Limpar</button>
+          </div>
+          <div class="form-group">
+            <label for="media">Media</label>
+            <br />
+            <input type="number" name="media" value="" readonly id="media" />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="situacao"
+              class="cx"
+              id="situacao"
+              placeholder="Situacao Final"
+              readonly
+            />
+          </div>
+        </form>
+        <p id="aviso" class=""></p>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

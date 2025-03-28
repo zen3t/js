@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 16 de js</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onLoarde="gerarNumeroSecreto()">
+    <main id="tela-inicial">
+      <div id="titulo">
+        <h1>Advinhar Numero Secreto</h1>
+      </div>
+      <p class="centro" id="dica">Digite um numero entre 1 a 10</p>
+      <section class="conteudos">
+        <input
+          type="number"
+          step="1"
+          min="1"
+          max="10"
+          name="numeroInput"
+          onBlur="validarNumeroDigitado(this.value)"
+          onClick="tocarMusicaDeFundo();ativarBtnChutar()"
+          class="input animar"
+          id="inputNumero"
+        />
+        <button class="botao" id="btnChutar" onClick="jogar()">Chutar</button>
+        <br />
+        <button class="botao" id="btnSom" onClick="ativarDesativarMusica()">
+          &#9835;
+        </button>
+      </section>
+      <p class="centro" id="aviso"></p>
+    </main>
+    <audio id="musicaDeFundo" src="./asset/abertura-the-mentalis.mp3"></audio>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

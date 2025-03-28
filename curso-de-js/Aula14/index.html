@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 14 de js</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Tela Principal-->
+    <main id="tela-principal">
+      <h1>Calculadora de IMC</h1>
+      <form action="" id="formulario" method="POST">
+        <!--Nome-->
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            class="input"
+            id="nome"
+            name="nome"
+            autofocus
+            required
+          />
+        </div>
+        <!--Idade-->
+        <div class="form-group">
+          <label for="idade">Idade</label>
+          <input
+            type="number"
+            class="input"
+            id="idade"
+            min="0"
+            max="130"
+            name="idade"
+            required
+          />
+        </div>
+        <!--Peso-->
+        <div class="form-group">
+          <label for="peso">Peso</label>
+          <input
+            type="number"
+            class="input"
+            step="0.01"
+            id="peso"
+            min="0.0"
+            max="500.0"
+            name="peso"
+            required
+          />
+        </div>
+        <!--Altura-->
+        <div class="form-group">
+          <label for="altura">Altura</label>
+          <input
+            type="number"
+            class="input"
+            step="0.01"
+            id="altura"
+            min="0.0"
+            max="2.70"
+            name="altura"
+            required
+          />
+        </div>
+        <!--Botoes-->
+        <div class="form-group">
+          <button type="submit" class="botao" id="btnEnviar">Envia</button>
+          <button type="reset" class="botao" id="btnLiLimpar">Limpar</button>
+        </div>
+        <!--Imc-->
+        <div class="form-group">
+          <label for="imc">IMC</label>
+          <input
+            type="number"
+            name="imc"
+            value="0.0"
+            class="input"
+            id="resultadoImc"
+            disabled
+          />
+          <span id="aviso"></span>
+        </div>
+      </form>
+      <!--Resultado-->
+      <div id="resultado">
+        <h2 id="id" class="pessoa">IMC</h2>
+        <p id="nome" class="pessoa"></p>
+        <p id="idade" class="pessoa"></p>
+        <p id="peso" class="pessoa"></p>
+        <p id="altura" class="pessoa"></p>
+        <p id="imc" class="pessoa"></p>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

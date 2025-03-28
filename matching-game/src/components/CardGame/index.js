@@ -1,9 +1,9 @@
+import "./style.css";
 function CardGame() {
   return `
-    <article>
-      Zeneto
+    <article class="card-game">
+      <img src="src/images/alura.png" alt="Logo da alura">
     </article>
 `;
 }
-
 export default CardGame;

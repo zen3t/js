@@ -1,2 +1,4 @@
+import CardGame from "./components/CardGame";
 const $root = document.querySelector("#root");
-$root.textContent = "Ze neto";
+const $htmlCardGame = CardGame() + CardGame();
+$root.insertAdjacentHTML("beforeend", $htmlCardGame);

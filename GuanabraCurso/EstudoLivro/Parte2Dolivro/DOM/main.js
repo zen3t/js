@@ -4,4 +4,4 @@ function loadAsync(url) {
   s.src = url;
   head.appendChild(s);
 }
-//loadAsync("script.js");
+loadAsync("ex15-6.js");

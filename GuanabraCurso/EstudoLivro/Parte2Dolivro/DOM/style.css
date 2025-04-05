@@ -1,0 +1,18 @@
+h1,
+h2 {
+  color: blue;
+  font-style: italic;
+  text-align: center;
+}
+#WARNING {
+  text-align: center;
+  background-color: yellowgreen;
+  font-size: 150%;
+  margin: 0 1in 0 1in;
+  border: solid red 8px;
+  padding: 10px;
+}
+#special {
+  text-align: center;
+  text-transform: uppercase;
+}

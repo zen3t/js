@@ -1,0 +1,6 @@
+.reveal* {
+  display: none;
+}
+.reveal* .handle {
+  display: block;
+}

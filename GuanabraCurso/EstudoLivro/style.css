@@ -1,0 +1,7 @@
+.output {
+  font-weight: bold;
+}
+th,
+td {
+  vertical-align: top;
+}

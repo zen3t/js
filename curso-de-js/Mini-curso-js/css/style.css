@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.buscar {
+  width: 100%;
+  background: #eee;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+}
+input {
+  width: 90%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 22px;
+  border: 1px solid #ddd;
+  margin: 15px;
+  border-radius: 5px;
+}
+#listaProduto {
+  display: block;
+  width: 91%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 70px;
+}
+#listaProduto li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 12px;
+}
+#listaProduto li a:hover {
+  background: #eee;
+}
+.item-name {
+  margin-left: 15px;
+}
+h1,
+p {
+  margin-left: 5%;
+}

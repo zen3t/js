@@ -69,3 +69,4 @@ Insert.after(
   `<p id='special'>This paragraph is centered and appears in uppercase letters.<br>
 <span>Here we explicity use an unline style uppercase</span>></p>`
 );
+console.log(h2.id);

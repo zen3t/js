@@ -1,0 +1,27 @@
+div {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background-color: green;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid black;
+}
+span {
+  text-shadow: 3px 3px 1px #888;
+  position: absolute;
+  top: 3px;
+  margin-left: 25%;
+  padding-top: 25%;
+  left: 3px;
+  z-index: 1;
+  color: red;
+  font: 20pt bold;
+}
+.attention {
+  background-color: yellow;
+  font-weight: bold;
+  border: solid black 2px;
+}

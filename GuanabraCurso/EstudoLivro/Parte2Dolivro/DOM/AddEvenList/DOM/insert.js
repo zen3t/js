@@ -55,18 +55,18 @@ let Insert = (function () {
   };
   return Insert;
 })();
-
-let div = document.getElementById("WARNING");
-let h2 = document.getElementById("text");
-Insert.before(div, "<h1>Cascading Sheets Demo</h1>");
-Insert.atStart(h2, "<h2>Warning</h2>");
-Insert.atEnd(
-  h2,
-  "This is warning! Note how it grabs your  attention with bold text"
-);
-Insert.after(
-  div,
-  `<p id='special'>This paragraph is centered and appears in uppercase letters.<br>
-<span>Here we explicity use an unline style uppercase</span>></p>`
-);
-console.log(h2.id);
+export default Insert;
+// let div = document.getElementById("WARNING");
+// let h2 = document.getElementById("text");
+// Insert.before(div, "<h1>Cascading Sheets Demo</h1>");
+// Insert.atStart(h2, "<h2>Warning</h2>");
+// Insert.atEnd(
+//   h2,
+//   "This is warning! Note how it grabs your  attention with bold text"
+// );
+// Insert.after(
+//   div,
+//   `<p id='special'>This paragraph is centered and appears in uppercase letters.<br>
+// <span>Here we explicity use an unline style uppercase</span>></p>`
+// );
+// console.log(h2.id);

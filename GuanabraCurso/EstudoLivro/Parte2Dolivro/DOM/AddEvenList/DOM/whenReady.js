@@ -36,8 +36,4 @@ let whenReady = (function () {
   };
 })();
 
-whenReady(function () {
-  console.log("esta pronto");
-  document.querySelector("body").style.backgroundColor = "lightblue";
-  document.querySelector("h1").textContent = "Teste feito com sucesso";
-});
+export default whenReady;
